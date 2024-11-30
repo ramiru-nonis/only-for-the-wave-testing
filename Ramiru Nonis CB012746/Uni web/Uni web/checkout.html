@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./Images/Logo.png">
+    <title>Buy Now</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="Images/Logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="specialist.html">SPECIALIST</a></li>
+                <li><a href="reservations.html">CONSULTING RESERVATIONS</a></li>
+                <li><a href="pharmacy.html">PHARMACY</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+       
+        <div class="order-summary">
+            <h2>Your Order</h2>
+            <h3 id="Delivery"></h3>
+            <ul id="order-items">
+                
+            </ul>
+            <p>Total Price: <span id="total-price">$0.00</span></p>
+
+            <section>
+                <table id="product-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th class="cost">Product Image</th>
+                    <th>Quantity</th>
+                    <th class="cost">Price</th>
+                    <th >Cost</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="total-label">Total</td>
+                    <td id="total-cost">0.00</td>
+                </tr>
+                
+            </tfoot>
+        </table>
+            </section>
+        </div>
+
+        <form id="checkout-form">
+
+            <h2>Personal Details</h2>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="name" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" maxlength="10"  required>
+
+            
+            <h2>Delivery Details</h2>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" maxlength="50" required>
+
+
+            
+            <h2>Payment Information</h2>
+            <label for="card-name">Cardholder Name:</label>
+            <input type="text" id="card-name" name="card-name" required>
+
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+
+
+            <button id="checkout">Confirm Order</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!---Footor-->
+
+  <footer>
+    <div class="footer-container">
+        <div class="logo2">
+            <img src="Images/Logo.png" alt="Logo">
+        </div>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <ul>
+                <li>Colombo | Kandy | Galle</li>
+                <li>Email: info@MediSafeHospital.com</li>
+                <li>Phone: 078-321-4379</li>
+            </ul>
+        </div>
+        <div class="follow-us">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="Images/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://www.twitter.com/"><img src="Images/twitter.png" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="Images/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="specialist.html">SPECIALIST</a></li>
+                <li><a href="reservations.html">RESERVATIONS</a></li>
+                
+                <li><a href="pharmacy.html">PHARMACY</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+        
+
+
+
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        document.querySelector('.navbar').classList.toggle('active');
+    });
+</script>
+<script type="module" src="../Javascript/checkout.js"></script>
+    
+</body>
+</html>

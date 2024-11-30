@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-XXXXX" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="Images/Logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="specialist.html">SPECIALIST</a></li>
+                <li><a href="reservations.html">CONSULTING RESERVATIONS</a></li>
+                <li><a href="pharmacy.html">PHARMACY</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header> 
+
+
+    <div class="form-container">
+        <h2>Booking Reservation</h2>
+        <p>To reserve seats please complete and submit the booking form.</p>
+        
+        <form>
+            <!-- Full Name -->
+            <div class="form-group">    
+                <label for="first-name">Full Name <span>*</span></label>
+                <input type="text" id="first-name" placeholder="First Name" required>
+                <input type="text" id="last-name" placeholder="Last Name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">E-mail <span>*</span></label>
+                <input type="email" id="email" placeholder="ex: myname@example.com" required>
+                <small>example@example.com</small>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number <span>*</span></label>
+                <input type="tel" id="phone" placeholder="(000) 000-0000" required>
+            </div>
+
+            <!-- Departure Date/Time -->
+            <div class="form-group">
+                <label for="date">Date/Time <span>*</span></label>
+                <input type="date" id="date" required>
+                <input type="time" id="time" required>
+            </div>
+
+            <!-- Patient's need -->
+             <div class="form-group">
+                <label for="situation">Describe your Situation to us.</label>
+                <input type="text" id="situation" placeholder="Type your reason">
+             </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="logo2">
+                <img src="Images/Logo.png" alt="Logo">
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li>Colombo | Kandy | Galle</li>
+                    <li>Email: info@MediSafeHospital.com</li>
+                    <li>Phone: 078-321-4379</li>
+                </ul>
+            </div>
+            <div class="follow-us">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><img src="Images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.twitter.com/"><img src="Images/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="Images/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="specialist.html">SPECIALIST</a></li>
+                    <li><a href="reservations.html">RESERVATIONS</a></li>
+                    <li><a href="pharmacy.html">PHARMACY</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

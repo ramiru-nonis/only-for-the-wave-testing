@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medi Safe Hospital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-......." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./Images/Logo.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="Images/Logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="specialist.html">SPECIALIST</a></li>
+                <li><a href="reservations.html">CONSULTING RESERVATIONS</a></li>
+                <li><a href="pharmacy.html">PHARMACY</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+   <main>
+
+
+    <section class="pharmacy">
+        <div class="pharmacy-main">
+            <img src="Images/pharmacy.jpg" alt="">
+            <div class="pharmacy-body">
+                <h1>Pharmacy</h1>
+                <p>Here, we work hard to offer a dependable and easy method of ordering medications. Our goal is to make healthcare more accessible and convenient for individuals managing conditions or maintaining a healthy lifestyle.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <div class="order-topic">
+            <h1>Order</h1>
+            <h2 id="cart">cart :</h2>
+        </div><br>
+        
+        <h3>Analgesics</h3>
+        <div class="product-section" id="Analgesics"></div><br>
+
+        <h3>Antibiotics</h3>
+        <div class="product-section" id="Antibiotics"></div><br>
+
+        <h3>Antidepressants</h3>
+        <div class="product-section" id="Antidepressants"></div><br>
+
+        <h3>Antihistamines</h3>
+        <div class="product-section" id="Antihistamines"></div><br>
+
+        <h3>Antihypertensives</h3>
+        <div class="product-section" id="Antihypertensives"></div><br>
+    </section>
+    
+    <section >
+        <table id="product-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th class="image-col">Product Image</th>
+                    <th>Quantity</th>
+                    <th  >Price</th>
+                    <th>Cost</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td  class="total-label">Total</td>
+                    <td id="total-cost">0.00</td>
+                </tr>
+                
+            </tfoot>
+        </table>
+
+        <button id="buy">
+            Buy
+        </button>
+
+         <button id="favourites">
+            Add to favourites
+        </button>
+         <button id="favouritesReset">
+            Rest Favourites
+        </button>
+         <button id="favouritesApply">
+            Apply Favourites
+        </button>
+    </section>
+
+
+        
+</main>
+    
+        
+        
+
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="logo2">
+                <img src="Images/Logo.png" alt="Logo">
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li>Colombo | Kandy | Galle</li>
+                    <li>Email: info@MediSafeHospital.com</li>
+                    <li>Phone: 078-321-4379</li>
+                </ul>
+            </div>
+            <div class="follow-us">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><img src="Images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.twitter.com/"><img src="Images/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="Images/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="specialist.html">SPECIALIST</a></li>
+                    <li><a href="reservations.html">RESERVATIONS</a></li>
+                    <li><a href="pharmacy.html">PHARMACY</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+    </script>
+
+
+    <script type="module" src="../Javascript/pharmacy.js"></script>
+</body>
+</html>
