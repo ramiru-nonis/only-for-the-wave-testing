@@ -15,11 +15,11 @@
         <nav>
             <ul class="navbar">
                 <li><a href="../index.html">HOME</a></li>
-                <li><a href="html pages/aboutus.html">ABOUT US</a></li>
-                <li><a href="html pages/service.html">SERVICES</a></li>
-                <li><a href="html pages/specialist.html">SPECIALIST</a></li>
-                <li><a href="html pages/reservations.html">CONSULTING RESERVATIONS</a></li>
-                <li><a href="html pages/pharmacy.html">PHARMACY</a></li>
+                <li><a href="html_pages/aboutus.html">ABOUT US</a></li>
+                <li><a href="html_pages/service.html">SERVICES</a></li>
+                <li><a href="html_pages/specialist.html">SPECIALIST</a></li>
+                <li><a href="html_pages/reservations.html">CONSULTING RESERVATIONS</a></li>
+                <li><a href="html_pages/pharmacy.html">PHARMACY</a></li>
             </ul>
         </nav>
         <div class="hamburger">
@@ -90,9 +90,10 @@
             <h2>Payment Information</h2>
             <h3>Select your Payment method</h3>
             <div class="select-box">
-                <select>
-                    <option>Cash</option>
-                    <option>Card</option>
+                <select id="payment-option">
+                    <option value="hi">Select an payment method</option>
+                    <option value="cash">Cash</option>
+                    <option value="card">Card</option>
                 </select>
             </div>
             
@@ -101,13 +102,15 @@
 
             
 
+            <div class="card-payment-container">
+                <label for="Expire-Date">Expire Date:</label>
+                <input type="text" id="Expire-Date" name="Expire-Date" required>
 
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+            </div>
             
-            <label for="Expire-Date">Expire Date:</label>
-            <input type="text" id="Expire-Date" name="Expire-Date" required>
-
-            <label for="card-number">Card Number:</label>
-            <input type="text" id="card-number" name="card-number" required>
+            
 
 
             <button id="checkout">Confirm Order</button>

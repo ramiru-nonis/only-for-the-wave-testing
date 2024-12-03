@@ -68,6 +68,28 @@ function adjustTableLayout() {
   }
 }
 
+
+function paymentMethod() {
+  const paymentOptions = document.getElementById("payment-option");
+  const cardPaymentContainer = document.querySelector(".card-payment-container");
+  const cardFields = document.querySelectorAll("#Expire-Date, #card-number");
+
+  paymentOptions.addEventListener("change", () => {
+      const option = paymentOptions.value;
+      console.log(option);
+
+      if (option === "hi") {
+          alert("Please select a payment method");
+      } else if (option === "cash") {
+          cardPaymentContainer.style.visibility = "hidden";
+          cardFields.forEach(field => field.removeAttribute("required")); // Remove required attributes
+      } else {
+          cardPaymentContainer.style.display = "block";
+          cardFields.forEach(field => field.setAttribute("required", "true")); // Add required attributes
+      }
+  });
+}
+
 // Add event listeners for loading and resizing
 
 
@@ -82,3 +104,7 @@ document.getElementById("checkout").addEventListener("click",pay);
 document.getElementById(
   "Delivery"
 ).textContent = `Estimated Delivery :${new Date(new Date().setDate(new Date().getDate() + 3)).toDateString()}`;
+
+paymentMethod();
+
+
