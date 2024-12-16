@@ -19,7 +19,7 @@ export const Medicines = [
     {
       name: "Morphine",
       price: 200000,
-      image: "../Products/Analgesics/Morphine.jpg",
+      image: "../../Products/Analgesics/Morphine.jpg",
     },
     {
       name: "Oxycodone",
