@@ -93,7 +93,7 @@ function paymentMethod() {
 // Add event listeners for loading and resizing
 
 
-//-----------------------------main programm-----------------------------------------------------------------------
+
 const cart = JSON.parse(localStorage.getItem("currentOrder")) || [];
 updateTheTable(cart);
 window.addEventListener("resize", adjustTableLayout);

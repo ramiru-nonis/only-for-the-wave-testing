@@ -1,7 +1,7 @@
 import { Medicines } from "./Products.js";
-// function to the buy button
+
 function Buy() {
-  // Set the current order in local storage
+  
   localStorage.setItem("currentOrder", JSON.stringify(cart));
   let currentCart = JSON.parse(localStorage.getItem("currentOrder"));
   
@@ -23,7 +23,7 @@ function restFavourites() {
   resetCart();
 }
 
-// function to reset the cart
+    
 function resetCart() {
   localStorage.removeItem("cart");
   localStorage.removeItem("currentOrder");
@@ -140,7 +140,7 @@ function updateThetable() {
       }
     });
   });
-}
+} 
 
 
 // main function 
